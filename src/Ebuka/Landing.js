@@ -1,7 +1,7 @@
-import Select from 'rc-select'
 import React from 'react'
 import styled from 'styled-components'
 import BackgroundImg from "./hotelimages/Header.jpg"
+import {Link} from "react-router-dom"
 
 const Landing = () => {
     return (
@@ -15,11 +15,18 @@ const Landing = () => {
                         tempus dolor, sit amet elementum lorem.
                         Ut cursus tempor turpis.
                     </span>
+<<<<<<< HEAD
                     <Button>Book Now</Button>
                    </Content>
                 </Header>
                 <BookContainer>
                     <BookContant>
+=======
+                  <Link to="/Booking">  <Button >Book Now</Button> </Link>
+
+                    <BookContainer>
+                            <BookContant>
+>>>>>>> 5a059c1fff6072c90304486694915f2e8cba60ae
                                 <select>
                                     <option>Check in</option>
                                 </select>
