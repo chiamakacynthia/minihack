@@ -61,7 +61,7 @@ const BookContant = styled.div`
     }
 
     button{
-        width: 200px;
+        width: 220px;
         height: 50px;
         background-color: #ff9200;
         border: none;
@@ -129,7 +129,7 @@ const Header = styled.div`
         top: 0;
         width: 100%;
         height: 406px;
-        background-color: rgba(0, 0, 0, 0.318);
+        background-color: rgba(0, 0, 0, 0.718);
         position: absolute;
         z-index: -2;
     }
