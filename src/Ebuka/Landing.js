@@ -15,18 +15,11 @@ const Landing = () => {
                         tempus dolor, sit amet elementum lorem.
                         Ut cursus tempor turpis.
                     </span>
-<<<<<<< HEAD
-                    <Button>Book Now</Button>
-                   </Content>
-                </Header>
-                <BookContainer>
-                    <BookContant>
-=======
                   <Link to="/Booking">  <Button >Book Now</Button> </Link>
-
+                  </Content>
+                </Header>
                     <BookContainer>
                             <BookContant>
->>>>>>> 5a059c1fff6072c90304486694915f2e8cba60ae
                                 <select>
                                     <option>Check in</option>
                                 </select>
@@ -55,7 +48,7 @@ const Landing = () => {
 export default Landing
 const AboutContainer = styled.div`
     width: 100%;
-    
+
 `
 const BookContant = styled.div`
     width: 90%;
