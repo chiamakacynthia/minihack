@@ -4,6 +4,7 @@ import SideBar from './SideBar'
 import Fade from 'react-reveal/Fade';
 import {HiMenuAlt1} from "react-icons/hi"
 import {GiCancel} from "react-icons/gi"
+import {Link} from "react-router-dom"
 
 const QuaryHeader = () => {
 
@@ -20,14 +21,14 @@ const QuaryHeader = () => {
          
            
              <List>
-                  <span>Home</span>
-                  <span>About</span>
-                  <span>Hotels</span>
-                  <span>Register a Hotel</span>
+                 <Link to="/"> <span>Home</span> </Link>
+                 <Link  to="/about"> <span>About</span></Link>
+                  <Link  to="/Hotels"><span>Hotels</span></Link>
+                  <Link  to="/register"> <span>Register a Hotel</span></Link>
                
               </List>
 <h> 
-    <Button ontoggle={onToggle}>Login</Button>
+   <Link to ="/SignPage"> <Button ontoggle={onToggle}>Login</Button> </Link>
     <Button1 >Book Now</Button1>
 </h>
 
