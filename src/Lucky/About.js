@@ -49,7 +49,7 @@ const About = () => {
                 </FindHolder>
 
         <HoldFind>
-        <LastCard>Dicover</LastCard>
+        {/* <LastCard>Discover</LastCard> */}
         </HoldFind>
 
         </AboutContainer>
