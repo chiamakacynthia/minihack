@@ -9,7 +9,6 @@ const Landing = () => {
             <Wrapper>
                 <Header>
                    <Content>
-                 
                    <Title>Book Your Stay</Title>
                     <span>Fusce erat dui, venenatis et erat in, 
                         vulputate dignissim lacus. Donec vitae
@@ -17,11 +16,11 @@ const Landing = () => {
                         Ut cursus tempor turpis.
                     </span>
                     <Button>Book Now</Button>
-
-                    <BookContainer>
-                            <BookContant>
+                   </Content>
+                </Header>
+                <BookContainer>
+                    <BookContant>
                                 <select>
-                                    <option>Check in</option>
                                     <option>Check in</option>
                                 </select>
                                 <select>
@@ -36,8 +35,6 @@ const Landing = () => {
                                 <button>Book Now</button>
                             </BookContant>
                     </BookContainer>
-                   </Content>
-                </Header>
             </Wrapper>
         </Container>
     )
@@ -45,9 +42,13 @@ const Landing = () => {
 
 export default Landing
 const BookContant = styled.div`
-    width: 95%;
+    width: 90%;
     height: 80%;
     margin-top: 9px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* background-color: gray; */
 
     select{
@@ -58,6 +59,7 @@ const BookContant = styled.div`
         border: none;
         background-color: rgba(206, 204, 204, 0.521);
         color: gray;
+        z-index: 10;
     }
 
     button{
@@ -65,14 +67,41 @@ const BookContant = styled.div`
         height: 50px;
         background-color: #ff9200;
         border: none;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    @media (min-width: 320px) and (max-width: 1024px){
+        width: 100%;
+        display: flex;
+
+        button{
+            width: 150px;
+            margin-top: 10px;
+        }
+
+        select{
+            width: 120px;
+            margin-bottom: 0px;
+            height: 50px;
+            margin-top: 10px;
+        }
     }
 `
 const BookContainer = styled.div`
-    width: 80%;
-    height: 50%;
-    background-color: #ffffff;
+    width: 90vw;
+    height: 20vh;
+    background-color: #fff;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -110px;
+    margin-left: 50px;
+
+    @media (min-width: 320px) and (max-width: 1024px){
+        margin: -165px 15px;
+        height: 50vh;
+    }
 `
 const Button = styled.div`
     margin-top: 83px;
@@ -85,6 +114,10 @@ const Button = styled.div`
     align-items: center;
     color: #fff;
     font-weight: bold;
+
+    @media (min-width: 320px) and (max-width: 1024px){
+       margin-top: 0px;
+    }
 `
 const Title = styled.div`
     margin-top: 50px;
@@ -93,6 +126,11 @@ const Title = styled.div`
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic; 
+
+    @media (min-width: 320px) and (max-width: 1024px){
+        font-size: 25px;
+        font-weight: 700;
+    }
 `
 const Content = styled.div`
     width: 100%;
@@ -110,6 +148,13 @@ const Content = styled.div`
         font-weight: 500;
         color: #fff;
         margin-top: 10px;
+
+        @media (min-width: 320px) and (max-width: 1024px){
+        font-size: 15px;
+        font-weight: 500;
+        width: 90%;
+        margin-bottom: 20px;
+    }
     }
 `
 const Header = styled.div`
@@ -123,7 +168,6 @@ const Header = styled.div`
     background-size: cover;
     position: relative;
     z-index: -1;
-
     :after{
         content: "";
         top: 0;
@@ -140,6 +184,11 @@ const Wrapper = styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
+
+    @media (min-width: 320px) and (max-width: 1024px){
+        display: flex;
+        justify-content: center;
+    }
 `
 const Container = styled.div`
     width: 100%;
