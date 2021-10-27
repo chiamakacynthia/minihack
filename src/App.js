@@ -5,7 +5,7 @@ import Landing from './Ebuka/Landing'
 const App = () => {
   return (
     <div>
-   {/* <Header/> */}
+   <Header/>
    <Landing/>
     </div>
   )

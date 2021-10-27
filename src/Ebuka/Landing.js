@@ -69,7 +69,7 @@ const BookContant = styled.div`
 `
 const BookContainer = styled.div`
     width: 80%;
-    height: 110px;
+    height: 50%;
     background-color: #ffffff;
     display: flex;
     justify-content: center;
