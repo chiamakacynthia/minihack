@@ -1,9 +1,10 @@
 import React from 'react'
+import HotelView from './Chris/HotelView'
 
 const App = () => {
   return (
     <div>
-      team work
+      <HotelView/>
     </div>
   )
 }
