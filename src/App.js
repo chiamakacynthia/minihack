@@ -4,7 +4,7 @@ import HotelView from './Chris/HotelView'
 const App = () => {
   return (
     <div>
-      <HotelView/>
+      
     </div>
   )
 }
