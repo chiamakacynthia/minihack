@@ -35,12 +35,21 @@ const Landing = () => {
                                 <button>Book Now</button>
                             </BookContant>
                     </BookContainer>
+
+
+                    <AboutContainer>
+                        the boy is good
+                    </AboutContainer>
             </Wrapper>
         </Container>
     )
 }
 
 export default Landing
+const AboutContainer = styled.div`
+    width: 100%;
+    
+`
 const BookContant = styled.div`
     width: 90%;
     height: 80%;
