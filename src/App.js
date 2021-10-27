@@ -11,10 +11,14 @@ const App = () => {
   return (
     <div>
 
+   <Header/>
+
+
       <About/>
    {/* <Header/> */}
 
    {/* <Header/> */}
+
    <Landing/>
 
     </div>
