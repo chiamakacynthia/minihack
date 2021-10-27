@@ -12,6 +12,13 @@ import Booking from './confidence/Booking'
 
 const App = () => {
   return (
+<<<<<<< HEAD
+    <div>
+   <Header/>
+ 
+   <Landing/>
+    </div>
+=======
     <BrowserRouter>
      <Header/>
 <Switch>
@@ -22,6 +29,7 @@ const App = () => {
         <Route exact path="/register" component={Register} />
  </Switch>
      </BrowserRouter>
+>>>>>>> 5a059c1fff6072c90304486694915f2e8cba60ae
   )
 }
 
