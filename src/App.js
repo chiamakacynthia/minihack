@@ -1,12 +1,26 @@
 import React from 'react'
+
+ import Header from './Cynthia/Header'
+import About from './Lucky/About'
+
 import Header from './Cynthia/Header'
 import Landing from './Ebuka/Landing'
+
 
 const App = () => {
   return (
     <div>
+
    <Header/>
+
+
+      <About/>
+   {/* <Header/> */}
+
+   {/* <Header/> */}
+
    <Landing/>
+
     </div>
   )
 }
