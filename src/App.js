@@ -1,9 +1,10 @@
 import React from 'react'
+import Header from './Cynthia/Header'
 
 const App = () => {
   return (
     <div>
-      team work
+   <Header/>
     </div>
   )
 }
